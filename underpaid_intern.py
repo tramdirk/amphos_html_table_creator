@@ -3,6 +3,7 @@ def make_a_table(data):
     subtitle = data['subtitle']
     columns = data['columns']
     lines = data['lines']
+    link = data['link']
     column_titles = data['column_titles']
 
     filename = headline + '.html'
@@ -54,7 +55,9 @@ def make_a_table(data):
         file.write('\t</tr>\n')
         i = i + 1
     file.write('</tbody\n')
-    file.write('</table\n')
+    file.write('</table>\n')
+    if link == 'y':
+        file.write('<a href="https://www.amphos.de">this is an example, remove me</a>\n')
     file.write('</body>\n')
     file.write('</HTML>')
     file.close()
