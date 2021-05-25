@@ -9,15 +9,13 @@ def make_a_table(data):
     filename = headline + '.html'
     file = open(filename, 'w+')
     file.write('<HTML>\n')
-    file.write('<head>')
+    file.write('<body>\n')
     file.write('<headl style="font-size:29px; font-family:Arial">')
     file.write(headline)
     file.write('</headl>\n')
     file.write('<p>')
     file.write(subtitle)
     file.write('</p>\n')
-    file.write('</head>\n')
-    file.write('<body>\n')
     file.write('<style type="text/css">\n'
                + '.tg  {border-collapse:collapse;border-color:#9e9e9e;border-spacing:0}\n'
                + '.tg td{background-color:#000000;border-color:#000000;border-style:solid;border-width:1px;color:#000000;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}\n'
